@@ -84,6 +84,7 @@ identity for automation with Azure CLI. This list isn't exhaustive of all scenar
 Switching to a managed identity or service principal is required for automation scenarios due to
 mandatory MFA enforcement for Microsoft Entra user identities.
 
+<<<<<<< HEAD
 ## How to begin
 
 To migrate your Azure CLI scripts from using `az login` with a Microsoft Entra ID human user account and password, follow these steps:
@@ -170,13 +171,73 @@ The Microsoft Entra ID documentation site offers more detail on MFA.
 [auth-managed-identity]: /cli/azure/authenticate-azure-cli-managed-identity
 
 [identity-federations]: /entra/workload-id/workload-identity-federation
+=======
+## See also
+
+- [Sign into Azure with a service principal using Azure CIL][auth-sp]
+- [Sign into Azure with a managed identity using Azure CLI][auth-managed-identity]
+- [Reducing personal access token (PAT) usage across Azure DevOps][pat-ado-blog]
+- [Improve security posture in Azure service connections with AzurePipelinesCredential][fic-serviceconn-blog]
+
+### Managed identities
+
+- [Managed identities for Azure resources][managed-identities]
+
+### Service principals
+
+- [Securing service principals in Microsoft Entra ID][service-principals-entra]
+- [Apps & service principals in Microsoft Entra ID][apps-sp-entra]
+
+### Workload identities
+
+- [Workload identities, other machine identities, and human identities][workload-identities]
+
+### Federated identities
+
+- [Flexible federated identity credentials (preview)][federated-identities]
+- [Configure an application to trust a managed identity (preview)][trust-managed-identity]
+- [Set up a Flexible Federated identity credential (preview)][setup-federated-identity]
+- [Migrate to Microsoft Entra multifactor authentication with federations][mfa-federations]
+
+### Microsoft Entra MFA articles
+
+- [Plan for mandatory Microsoft Entra multifactor authentication (MFA)][plan-entra-mfa]
+- [How to use the MFA Server Migration Utility to migrate to Microsoft Entra multifactor authentication][mfa-migrate-util]
+- [Configure Microsoft Entra multifactor authentication][config-entra-mfa]
+- [Deployment considerations for Microsoft Entra multifactor authentication][deploy-considerations-entra-mfa]
+- [Migrate from MFA Server to Microsoft Entra multifactor authentication][migrate-mfa-server-entra]
+
+<!-- link references -->
+
+[auth-managed-identity]: /cli/azure/authenticate-azure-cli-managed-identity
+[auth-sp]: /cli/azure/authenticate-azure-cli-service-principal
+[pat-ado-blog]: https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/
+[fic-serviceconn-blog]: https://devblogs.microsoft.com/azure-sdk/improve-security-posture-in-azure-service-connections-with-azurepipelinescredential/
+
+[managed-identities]: /entra/identity/managed-identities-azure-resources/
+
+[service-principals-entra]: /entra/architecture/service-accounts-principal
+[apps-sp-entra]: /entra/identity-platform/app-objects-and-service-principals
+
+[workload-identities]: /entra/workload-id/workload-identities-overview#workload-identities-other-machine-identities-and-human-identities
+
+[federated-identities]: /entra/workload-id/workload-identities-flexible-federated-identity-credentials
+[trust-managed-identity]: /entra/workload-id/workload-identity-federation-config-app-trust-managed-identity
+[setup-federated-identity]: /entra/workload-id/workload-identities-set-up-flexible-federated-identity-credential
+>>>>>>> ae60887ccb56b9d4050a4633403c7b960e5f7902
 [mfa-federations]: /entra/identity/authentication/how-to-migrate-mfa-server-to-mfa-with-federation
 
 [plan-entra-mfa]: /entra/identity/authentication/concept-mandatory-multifactor-authentication
 [mfa-migrate-util]: /entra/identity/authentication/how-to-mfa-server-migration-utility
+<<<<<<< HEAD
 [deploy-considerations-entra-mfa]: /entra/identity/authentication/howto-mfa-getstarted
 [migrate-mfa-server-entra]: /entra/identity/authentication/how-to-migrate-mfa-server-to-azure-mfa
 
 [workload-identities]: /entra/workload-id/workload-identities-overview#workload-identities-other-machine-identities-and-human-identities
 [pat-ado-blog]: https://devblogs.microsoft.com/devops/reducing-pat-usage-across-azure-devops/
 [fic-serviceconn-blog]: https://devblogs.microsoft.com/azure-sdk/improve-security-posture-in-azure-service-connections-with-azurepipelinescredential/
+=======
+[config-entra-mfa]: /entra/identity/authentication/howto-mfa-mfasettings
+[deploy-considerations-entra-mfa]: /entra/identity/authentication/howto-mfa-getstarted
+[migrate-mfa-server-entra]: /entra/identity/authentication/how-to-migrate-mfa-server-to-azure-mfa
+>>>>>>> ae60887ccb56b9d4050a4633403c7b960e5f7902
